@@ -29,3 +29,11 @@ topMenuEl.style.backgroundColor = "var(--sub-menu-bg)"
 topMenuEl.style.flex = "flex-around"
 
 // Set the background color of topMenuEl to the value stored in the --top-menu-bg CSS custom property."
+
+menuLinks.forEach((link) => {
+let newEl = document.createElement("a")
+ newEl.setAttribute("href", link.href)
+ newEl.innerHTML = link.text;
+ topMenuEl.append(newEl)
+})
+
