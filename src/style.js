@@ -1,4 +1,12 @@
 
+// Menu data structure
+let menuLinks = [
+    { text: 'about', href: '/about' },
+    { text: 'catalog', href: '/catalog' },
+    { text: 'orders', href: '/orders' },
+    { text: 'account', href: '/account' },
+  ];
+
 //  Select and cache the <main> element in a variable named mainEl.
 const mainEl = document.querySelector("main")
 
@@ -11,3 +19,13 @@ mainEl.appendChild(newDomText)
 mainEl.style.display = "flex"
 mainEl.style.justifyContent = "center"
 mainEl.style.alignItems = "center"
+
+
+// Select and cache the <nav id="top-menu"> element in a variable named topMenuEl.
+
+const topMenuEl = document.getElementById("top-menu")
+topMenuEl.style.height = "100%"
+topMenuEl.style.backgroundColor = "var(--sub-menu-bg)"
+topMenuEl.style.flex = "flex-around"
+
+// Set the background color of topMenuEl to the value stored in the --top-menu-bg CSS custom property."
